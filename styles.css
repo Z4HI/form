@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+body{
+    opacity: 0;
+}
+
+.fadeIn{
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.container{
+display: grid;
+grid-template-columns: 30% 70%;
+height: 100dvh;
+font-family: 'Poppins', sans-serif;
+}
+
+
+.leftside{
+    display: flex;
+    background:url(/images/urban-city-background-video-conferencing_23-2148641633.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#logo{
+
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+
+}
+
+.rightside{
+text-align: center;
+display: grid;
+grid-template-rows: 20% 70% 10%;
+background: #09BDFF;
+background: #09BDFF;
+background: -moz-linear-gradient(left, #09BDFF 0%, #016095 100%);
+background: -webkit-linear-gradient(left, #09BDFF 0%, #016095 100%);
+background: linear-gradient(to right, #09BDFF 0%, #016095 100%);
+}
+
+
+
+.logo{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signupform{
+    
+    border-radius: 10px;
+    border: solid black 2px;
+    background-color:ghostwhite;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 400px;
+    height: 100%;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    
+    
+}
+.inputbox{
+    font-size: 15px;
+    color: black;
+}
+.inputbox input{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.inputbox input:focus{
+   outline: 0;
+}
+
+.success{
+    outline: solid green 1px;
+ }
+
+ .error{
+    outline: solid red 1px;
+ }
+
+ #submit{
+   
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #4576CB;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorT{
+    height: 0px;
+    line-height: 12px;
+    font-size: 15px;
+}
+
+
