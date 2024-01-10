@@ -5,10 +5,11 @@ const email = document.querySelector('#email')
 const phone = document.querySelector('#phone')
 const password = document.querySelector('#password')
 const password2 = document.querySelector('#password2')
-const form = document.querySelector('form')
+const form = document.querySelector('.signupform')
 const inputbox = document.querySelector('.inputbox')
 
-document.body.className = 'fadeIn';
+document.body.classList.add('FadeIn')
+
 
 form.addEventListener('submit', e =>{
 

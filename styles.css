@@ -10,10 +10,11 @@ body{
     opacity: 0;
 }
 
-.fadeIn{
+.FadeIn{
     opacity: 1;
     transition: opacity 1s ease-in;
 }
+
 
 .container{
 display: grid;
@@ -25,13 +26,15 @@ font-family: 'Poppins', sans-serif;
 
 .leftside{
     display: flex;
-    background:url(/images/urban-city-background-video-conferencing_23-2148641633.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    background: url('./img/background1.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 #logo{
@@ -46,7 +49,7 @@ text-align: center;
 display: grid;
 grid-template-rows: 20% 70% 10%;
 background: #09BDFF;
-background: #09BDFF;
+
 background: -moz-linear-gradient(left, #09BDFF 0%, #016095 100%);
 background: -webkit-linear-gradient(left, #09BDFF 0%, #016095 100%);
 background: linear-gradient(to right, #09BDFF 0%, #016095 100%);
@@ -68,19 +71,32 @@ background: linear-gradient(to right, #09BDFF 0%, #016095 100%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 400px;
+    min-width: auto;
     height: 100%;
     place-items: center;
     margin-left: auto;
     margin-right: auto;
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    
+    transform: translateX(1000px);
+    animation:formfade 1s ease 1s 1 forwards;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes formfade {
+
+    100%{
+        transform: translateX(0);
+    }
     
 }
+
 .inputbox{
     font-size: 15px;
     color: black;
+    min-width: 20px;
 }
 .inputbox input{
+    
     border-radius: 5px;
     border: 1px solid black;
     padding: 10px;
@@ -118,10 +134,15 @@ background: linear-gradient(to right, #09BDFF 0%, #016095 100%);
     justify-content: center;
 }
 
+#login{
+    margin: 10px;
+    cursor: pointer;
+}
+
 .errorT{
     height: 0px;
     line-height: 12px;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 
